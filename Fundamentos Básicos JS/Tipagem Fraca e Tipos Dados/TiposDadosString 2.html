@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const escola = "ProgWeb_2021/2"
+
+        console.log(escola.length) // tamanho string
+        console.log(escola.charAt(4)) // elemento do indice 4
+        console.log(escola.charCodeAt(3)) // elemento unicode do indice 4
+
+        console.log(escola.indexOf('W')) // retorna a posição de dado valor na string escola
+        console.log(escola.substring(1)) //substring a partir do indice 1, incluindo o 1
+        console.log(escola.substring(3)) //substring a partir do indice 3, incluindo o 3
+        console.log(escola.substring(0, 2)) // vai de 0 ao 2 sem incluir o elemento do indice 2
+        console.log("escola" + escola) // concatena
+        console.log("escola".concat(escola + "!")) // concatena
+        console.log("escola".concat(escola.concat("!"))) //concatena
+        console.log(escola.replace(2021, 'XXXX')) // substitui
+        console.log(escola)
+
+        console.log('Luana,Roza,de Oliveira'.split(',')) //retornou um vetor de 3 elementos
+        //cria um vetor com nomes e inicializa a const "vetor". Depois usa forIn(laço)
+        //para imprimir os elementos de "vetor"
+        const vetor =  'Luana,Roza,de Oliveira'.split(',')
+        for (i in vetor) {
+            console.log(`elemento[${i}]: ${vetor[i]}`)
+        }
+        //irá concatenar e não somar pois a string tem preferência
+        console.log('3' + 2)
+        //irá subtrair
+        console.log('3' - 2)
+
+        console.log("")
+        
+    </script>
+</body>
+</html>

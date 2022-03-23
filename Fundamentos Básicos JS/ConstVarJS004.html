@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var como global
+
+    // Usando var, todas as funções criadas terão o mesmo valor de i que é global
+    const funcs = []
+
+    // inicializa o vetor com 10 funções, cada uma com um i diferente
+    for  (var i = 0; i < 10; i++) {
+        funcs.push(function () {
+            console.log(i)
+        } )
+    }
+    // como i foi declarado como var (que é global), qdo chama a função todas terão o mesmo i
+    funcs[2] ()
+    funcs[8] ()
+    </script>
+</body>
+</html>

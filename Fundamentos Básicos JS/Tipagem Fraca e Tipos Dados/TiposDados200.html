@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Number ou number?
+          Trata do tipo numérico...
+          number: é um tipo numérico (inteiro e ponto flutuante)
+          Number: é uma função para manipulação de números
+        */
+
+        //constantes numéricas...
+        cons peso1 = 1.0
+        const peso2 = 2.0
+        //Number é uma função.Cria uma constante do tipo number através...
+        // ...da função Number
+        const peso3 = Number('1,2')
+        console.log(peso1, peso2, peso3)
+        //Testa se o conteúdo das variáveis criadas são do tipo inteiro
+        console.log(Number.isInteger(peso1), Number.isInteger(peso2), Number.isInteger(peso3))
+        
+        const avaliacao1 = 9.880
+        console.log(`avaliaçao = ${avaliacao1}`)
+        const avaliacao2 = 6.700
+        const total = avaliacao1 * peso1 * avaliacao2 * peso2
+        const media = total / (peso1 * peso2)
+
+        console.log(media)
+        console.log(`media = ${media}`)
+        //Fixando o número de casas decimais de um tipo number...
+        console.log(`media = ${media.toFixed(2)}`)
+        console.log(`media =` + media.toFixed(2))
+
+        console.log(media.toString()) // converte para string
+        console.log(media.toString(2)) // converte para binário
+        //Testando number (é o tipo) e Number (é a função de manipulação de number) 
+        console.log(typeof media)
+        console.log(typeof Number)
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Maneira de especificar/formatar uma string de forma
+          mais elegante do que ficar concatenando variáveis do
+          tipo string
+        */
+       const nome = "Luana"
+       const nomeFormatado = "Olá Sra." + nome + "R. Oliveira"
+       console.log(nomeFormatado)
+
+       //usa "template string" para concatenar e imprimir
+       const sobrenome = "Roza de Oliveira"
+       const template1 = `Olá Sra. ${nome} ${sobrenome}`
+       //console.log(template1)
+
+       const template 2 = `Olá Sra. ${nome} ${sobrenome}` //usando crase...
+       console.log(template1, template2)
+
+       //concatenar e imprimir o resultado de uma expressão
+       console.log(`1 + 1 = ${1 + 1}`)
+
+       //Cria arrow function para converter string para maiúscula
+       const converteMaiusculo = texto => texto.toUpperCase()
+       //Chamando "arrow functions" de dentro do template string
+       console.log(`Ei... ${converteMaiusculo("cuidado")}!`)
+    </script>
+</body>
+</html>

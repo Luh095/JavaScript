@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Representa-se booleanos com true/false
+        */
+
+        //definindo isAtivo como booleano (false)
+        let isAtivo = false
+        console.log(isAtivo)
+        //alterando o valor booleano de isAtivo
+        isAtivo = true
+        console.log(isAtivo)
+
+        //definindo isAtivo como 1 numérico(não é booleano)
+        isAtivo = 1 //seria verdadeiro
+        console.log(isAtivo) //não gera resposta em booleano
+        //nega o valor de isAtivo para transforma-lo em booleano
+        console.log(!isAtivo)
+        //transforma 1 em true
+        console.log(!!isAtivo)
+
+        //Convertendo para true (usa-se !! - negação da negação)
+        //com exceção do zero, qqer inteiro é !=0, portanto true
+        console.log("")
+        console.log(!!3)
+        console.log(!!-1)
+        console.log(!!10)
+        console.log(!!0)
+        console.log(!0)
+
+        console.log("")
+        if (10 % 2) { //true !=0
+            console.log("Impar...")
+        } else {
+            console.log("Par")
+        }
+        if (!(10 % 2)) {//negação, quero o contrário disso: true !=0
+            console.log("Par...")
+        } else {
+            console.log("Impar...")
+        }
+        //!! converte um valor para booleano, portanto, se 10 % 2
+        //é igual a 0, então usando !! teremos a resposta em booleano
+        //if (!!(10 % 2) == true) { //negação, quero o contrário disso: true !=0
+        if (!!(10 % 2) == true) { //negação, quero o contrário disso: true !=0
+            console.log("Impar...")
+        } else {
+            console.log("Par...")
+        }
+    </script>
+</body>
+</html>

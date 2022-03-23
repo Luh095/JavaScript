@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Quasase tudo é função (vetor, função e objetos)
+          Objetos são criados a partir de funções
+        */
+       //Object é uma função
+       console.log(typeof Object)
+       //cria um objeto a partir de uma função
+       console.log(typeof new Object)
+       //cria uma função
+       const Cliente = function () { }
+       //Cliente é uma função
+       console.log(typeof Cliente)
+       //cria um objeto a partir de uma função
+       console.log(typeof new Cliente)
+       //cria um objeto
+       class Produto { }
+       //Produto é uma função
+       console.log(typeof Produto)
+       //cria um objeto a partir de uma função
+       console.log(typeof new Produto)
+       //cria um vetor
+       const vetro = []
+       //vetor é uma função
+       console.log(typeof vetor)
+
+       //-->função sem retorno...
+       //Define e implementa a função
+       function imprimeSoma(a, b) {
+         console.log(a + b)
+       }
+       //chama a função
+       imprimeSoma(2, 3)
+       //NaN - not a number pois não tem os dois argumentos necessários
+       imprimeSoma(2)
+       //não gera erro mas despreza os demais 4 argumentos passados além de a e b
+       imprimeSoma(2, 3, 4, 5, 6, 7)
+       //-->função com retorno
+       //Define os valores padrôes de a e b...
+       function soma(a = 0, b = 0) {
+         return a + b
+       }
+       console.log(soma(2, 3))
+       console.log(soma(2))
+       console.log(soma())
+
+       /*
+         Atribuindo função
+        */
+       //armazenando uma função em uma variável (const)
+       const imprimirSoma = function (a, b) {
+         console.log(a + b)
+       }
+       imprimirSoma(2, 3) //chama função
+       //Armazenando uma função arrow em uma variável
+       const soma = (a, b) => {
+         return a + b
+       }
+       console.log(soma(2, 3)) //chama função
+       //retorno implicito com arrow.Se tem uma função sem bloco e com
+       //apenas uma linha, essa linha será retornada
+       const subtracao = (a, b) ==> a - b
+       console.log(subtracao(3, 2)) //chama função
+       //outra função
+       const imprimir2 = a => console.log(a)
+       imprimir2("3"); //chama função
+       imprimir2("testes..."); //chama função
+    </script>
+</body>
+</html>

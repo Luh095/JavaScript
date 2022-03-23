@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Operadores de Atribuição
+        */
+       const a = 7
+       let b = 3
+
+       b += a //b = b+a
+       console.log(b)
+
+       b -= 4 //b = b + 4
+       console.log(b)
+
+       b *= 2 //b = b * 2
+       console.log(b)
+
+       b /= 2 //b = b / 2
+       console.log(b)
+
+       b %= 2 //b = b % 2
+       console.log(b)
+       
+       /*
+         Destructuring objeto -> pode ser utilizado como
+         argumento de uma função
+        */
+        //objeto pessoa
+        const pessoa = {
+            nome: "Carolina";
+            idade: 15,
+            endereco: {
+                logradouro: 'Rua Espanha',
+                numero: 1002
+            }
+        }
+        //usar destructuring para retirar atributos de objeto
+        //{} chaves é para indicar que está retirando algo de um objeto
+        //Automaticamente cria-se duas variáveis: nome e idade
+        const {nome, idade} = pessoa
+        console.log(nome, idade)
+        //ou nomeando as variáveis...n e i
+        const {nome: n, idade: i} = pessoa
+        console.log(n, i)
+        //const {endereco: {logradouro, numero}} = pessoa
+        const {endereco: {logradouro: endereco, numero}} = pessoa
+        console.log(n, i, endereco, numero)
+
+        /* 
+          Destructuring vetor -> mais para mostrar a funcionalidade
+          do que para usar
+        */
+       //usando destructuring para receber o 1 elemento de a[], que é 10
+       //vetor a só tem um elemento "= [10]"
+       const [a] = [10]
+       console.log(a)
+       //coloca o valor padrão para n6 (n6 = 0)
+       const [n1, , n3, ,n5, , n6 = 0] = [10, 7, 9, 8] //indices: 0,1,2,3
+       console.log(n1, n3, n5, n6)
+       //usa destructuring para criar 4 variáveis
+       const [a, b, c, d] = [3, 5, 1, 15]
+       console.log(a, b, c, d)
+    </script>
+</body>
+</html>

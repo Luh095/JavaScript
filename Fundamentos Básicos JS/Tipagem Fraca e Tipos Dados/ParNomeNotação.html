@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          par chave+valor
+          cada par pode pertencer a um contexto léxico(bloco de código)
+        */
+       //contexto de uma constante(global)
+       const saudacao = 'Opa'
+       console.log(saudacao)
+       //contexto de uma função
+       function exec() {
+         const saudacao = 'Falaaa'
+         return saudacao
+       }
+       console.log(exec())
+       //contexto de um objeto
+       const cliente = {
+         nome: 'Luana'
+         idade: 20,
+         peso: 50,
+         endereco: {
+           logradouro: 'Rua Gardenia',
+           numero: 89
+         }
+       }
+       console.log(cliente)
+
+       /*
+         Notação Ponto: forma de acessar membros de uma função e de um objeto
+       */
+      //arredondamento para cima
+      console.log(Math.ceil(6.1))
+      //cria objeto
+      const obj1 = {}
+      obj1.nome = 'Bola'
+      console.log(obj1.nome)
+      //cria uma função construtora(semelhante a uma classe)
+      function obj(nome) {
+        this.nome = nome //nome associado ao objeto criado
+        this.exec = function () { //faz atributo apontar para nova função
+          console.log('Exec...')
+        }
+      }
+      //instancia e usa objetos
+      const obj2 = new obj('cadeira')
+      const obj3 = new obj('mesa')
+      console.log(obj2.nome, obj3.nome)
+      obj2.exec()
+    </script>
+</body>
+</html>

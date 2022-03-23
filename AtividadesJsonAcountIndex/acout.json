@@ -1,0 +1,45 @@
+{
+    "nextId": 10,
+    "accounts": [
+      {
+        "id": 1,
+        "name": "Sherlock Holmes",
+        "balance": 75000
+      },
+      {
+        "id": 2,
+        "name": "Lisa Simpson",
+        "balance": 190
+      },
+      {
+        "id": 3,
+        "name": "Peter Parker",
+        "balance": 4500
+      },
+      {
+        "id": 4,
+        "name": "Kvothe Roth",
+        "balance": 800
+      },
+      {
+        "id": 5,
+        "name": "Mathias TRANSFORMADO",
+        "balance": 6578
+      },
+      {
+        "id": 6,
+        "name": "Kell Red",
+        "balance": 17000
+      },
+      {
+        "id": 7,
+        "name": "Sarah James",
+        "balance": 9900
+      },
+      {
+        "id": 9,
+        "name": "Marcoo",
+        "balance": 5684884
+      }
+    ]
+  }

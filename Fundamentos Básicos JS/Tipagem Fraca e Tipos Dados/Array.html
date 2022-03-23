@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Array é um objeto
+        */
+
+        //acessar um elemento não existente gerará um "indefinid"
+        const vetor = [1, 2, 3, 4]
+        if (vetor[6] == undefined) {
+            console.log("error...")
+        }
+
+        const valores = [7.7, 8.9, 6.3, 9.2]
+        console.log(valores[0])
+
+        console.log(valores) //imprimir os elementos do vetor...similar ao for
+        valores[4] = 2 //incluindo novo elemento num indice especifico
+        console.log(valores)
+
+        valores[10] = 22.5
+        console.log(valores)
+
+        //usando push()...inclui depois do último
+        valores.push("Luana", false)
+        console.log(valores)
+        console.log(valores.length)
+
+        //usando para zerar o elemento e não incluir e reorganizar o length
+        //a posição [0] continua existente mas vazia..
+        delete valores[0]
+        console.log(valores)
+        console.log(valores.length)
+
+        console.log(typeof (valores)) //imprimindo o tipo que é object
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Objeto é uma coleção de chave + valor
+          Pode ser criado e populado dinamicamente
+        */
+
+        //cria objeto vazio...
+        const prod1 = {}
+
+        //Cria/inicializa atributos...
+        prod1.nome = "Celular"
+        prod1.preco = 4998.90
+
+        //imprimindo o objeto...
+        console.log(prod1)
+
+        //criando objeto mais fortemente...
+        const prod2 = {
+            nome: "Carro"
+            preco: 100000.00
+        }
+        console.log(prod2)
+
+        console.log(prod1 == prod2)
+
+        /*
+          null: ausência de valor
+          undefined: quando declara e não inicializa
+        */
+       let varialvel1 //não inicializa
+       console.log(variavel1) //imprime "undefined" pois não foi inicializada
+
+       variavel1 = null //ausência de valor == null
+       console.log(variavel1) //null pois tem auxência de valor
+
+       console.log(null == undefined)
+       console.log(null === undefined)
+
+       //const nome
+       //console.log(nome) //aqui vai gerar erro..."missing" initializer
+       const nome = nullconsole.log(nome)
+    </script>
+</body>
+</html>

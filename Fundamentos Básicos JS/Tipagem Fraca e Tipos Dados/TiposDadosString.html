@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Cadeia de caracteres delimitado por 3 tipos de símbolos:
+          “ ”, ‘ ’, ` ` (template string)
+        */
+
+        //3 formas de delimitar uma string: " ",' ', ` `
+        let nome = "Luana Roza"
+        console.log(nome)
+        nome = 'Luana R. Oliveira'
+        console.log(nome)
+        nome = `Dra. ${nome.substring(0, nome.indexOf(" ")) + "Roza de Oliveira"}`
+        console.log(nome)
+    </script>
+</body>
+</html>

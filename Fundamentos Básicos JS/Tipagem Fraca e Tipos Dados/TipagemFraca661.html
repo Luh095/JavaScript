@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Tipagem Fraca: se trata de um tipo de dado que não é bem definido,
+          a linguagem pode alterar o tipo por alguma ação, sem
+          intervenção direta do programador
+        */
+
+        //tipo string...
+        let qualquer = 'legal'
+        //imprindo o conteúdo da variável...
+        console.log(qualquer)
+        //imprimindo o tipo da variável...
+        console.log(typeof qualquer)
+        //alterando o tipo da var qualquer para "number"...
+        qualquer = 4040
+        console.log(qualquer)
+        console.log(typeof qualquer)
+        //alterando o tipo da var qualquer para "number"...
+        qualquer = 9.500
+        console.log(qualquer)
+        console.log(typeof qualquer)
+
+        qualquer = true
+        console.log(qualquer)
+        console.log(typeof qualquer)
+
+        qualquer = []
+        console.log(qualquer)
+        console.log(typeof qualquer)
+
+        qualquer = {}
+        console.log(qualquer)
+        console.log(typeof qualquer)
+
+        qualquer = function () { }
+        console.log(qualquer)
+        console.log(typeof qualquer)
+        
+    </script>
+</body>
+</html>

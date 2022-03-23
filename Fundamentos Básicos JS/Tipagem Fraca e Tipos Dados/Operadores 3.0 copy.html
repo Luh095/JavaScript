@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          Operadores Lógicos
+        */
+       //função que testa condições para alterar o resultado de 4 variáveis
+       //As 4 variáveis são retornadas através de um objeto
+       //trablho 1 e 2 são parâmetros lógicos
+       function compras(trabalho1, trabalho2) {
+           const comprarSorvete = trabalho1 || trabalho2
+           const comprarTv50 = trabalho2 && trabalho1
+           const comprarTv32 = trabalho1 != trabalho2
+           const manterSaudavel = !comprarSorvete
+           //retorna um objeto com as 4 variáveis
+           return {comprarSorvete, comprarTv50, comprarTv32, manterSaudavel}
+       }
+       //testa agora
+       console.log(compras(true, true))
+       console.log(compras(true, false))
+       console.log(compras(false, true))
+       console.log(compras(false, false))
+
+       /*
+         Operador Ternário
+       */
+      const resultado = nota => nota >= 7 ? 'Aprovado' : 'Reprovado'
+      console.log(resultado(7.1))
+      console.log(resultado(6.7))
+    </script>
+</body>
+</html>

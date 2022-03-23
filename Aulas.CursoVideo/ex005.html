@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: hotpink;
+        color:white;
+        font:normal 18pt Arial;
+    }
+</style>
+<body>
+    <h1>Iniciando estudos com Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong>em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        //window.document.write('Olá, Mundo!')
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+        var corpo = window.document.body
+        //var p1 = window.document.getElementsByTagName('p')[0]
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: '+ p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = 'purple'
+        document.write(p1.innerHTML)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+      Declarações de variáveis com "Var" não respeitam o 
+      conceito de escopo de variável...
+    */
+
+    // var "sera" é acessível fora do escopo declarado...
+    {
+        {
+            var sera = "Será???"
+            console.log(sera)
+        }
+    }
+    console.log(sera)
+
+    //Uma exceção é qdo declara dentro do escopo de uma função...
+    function teste() {
+        var local = 123
+        console.log(local)
+    }
+    teste()
+    console.log(local)
+    </script>
+</body>
+</html>
